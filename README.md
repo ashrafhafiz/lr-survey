@@ -78,7 +78,33 @@ Laravel-React Survey Project
     npm run dev
     ```
 
-9. Install heroicons for react
+9. Install tailwindcss form plugin
+
+    ```
+    npm install @tailwindcss/forms
+    ```
+
+    Add the plugin to tailwindcss.config.js
+
+    ```
+    /** @type  {import('tailwindcss').Config} */
+
+    export  default {
+    	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    		theme: {
+    			extend: {},
+    		},
+    	plugins: [require("@tailwindcss/forms")],
+    };
+    ```
+
+10. Install heroicons for react
+
     ```
     npm install @heroicons/react
+    ```
+
+11. Install react-router-dom
+    ```
+    npm install react-router-dom
     ```
